@@ -96,6 +96,7 @@ namespace Kogane.Internal
                     if ( string.IsNullOrWhiteSpace( json ) ) return;
                     Undo.RecordObject( setting, "Load" );
                     JsonUtility.FromJsonOverwrite( json, setting );
+                    setting.Save();
                 }
             }
 
@@ -115,6 +116,7 @@ namespace Kogane.Internal
 
             Undo.RecordObject( setting, "Load" );
             JsonUtility.FromJsonOverwrite( json, setting );
+            setting.Save();
         }
 
         [SettingsProvider]
