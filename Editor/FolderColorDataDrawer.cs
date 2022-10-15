@@ -49,7 +49,7 @@ namespace Kogane.Internal
             (
                 position: position,
                 property: property,
-                label: new GUIContent( string.Empty )
+                label: new( string.Empty )
             );
         }
     }

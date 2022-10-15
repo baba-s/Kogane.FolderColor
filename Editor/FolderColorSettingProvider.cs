@@ -72,7 +72,7 @@ namespace Kogane.Internal
                 {
                     menu.AddItem
                     (
-                        content: new GUIContent( presetData.Name ),
+                        content: new( presetData.Name ),
                         on: false,
                         func: () => OnSelectedMenu( presetData )
                     );
